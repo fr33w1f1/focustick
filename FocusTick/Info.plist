@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- No main window or storyboard -->
+    <key>NSMainStoryboardFile</key>
+    <string></string>
+    <key>NSPrincipalClass</key>
+    <string>NSApplication</string>
+
+    <!-- Hide from Dock and App Switcher -->
+    <key>LSUIElement</key>
+    <true/>
+
+    <!-- App metadata -->
+    <key>CFBundleIdentifier</key>
+    <string>dev.focustick.app</string>
+    <key>CFBundleName</key>
+    <string>FocusTick</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleExecutable</key>
+    <string>FocusTick</string>
+
+    <!-- macOS 13+ minimum -->
+    <key>LSMinimumSystemVersion</key>
+    <string>13.0</string>
+
+    <!-- Accessibility usage description (required for CGEventTap) -->
+    <key>NSAppleEventsUsageDescription</key>
+    <string>FocusTick uses Accessibility to register a global keyboard shortcut.</string>
+</dict>
+</plist>
