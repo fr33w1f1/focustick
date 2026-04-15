@@ -25,6 +25,8 @@
     <string>APPL</string>
     <key>CFBundleExecutable</key>
     <string>FocusTick</string>
+    <key>CFBundleIconFile</key>
+    <string>AppIcon.icns</string>
 
     <!-- macOS 13+ minimum -->
     <key>LSMinimumSystemVersion</key>
