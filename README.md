@@ -1,7 +1,9 @@
 # FocusTick
-![](images/ChatGPTImageApr15202612_40_34AM.png)
-A zero-friction stopwatch that lives entirely in the macOS menu bar.  
-No window. No Dock icon. Feels like a native system feature.
+![](images/Screenshot092931.png)
+
+
+A stopwatch that lives entirely in the macOS menu bar.  
+No window. No Dock icon. Control + \ to start and stop.
 
 ```
 ● 04:23   ← running
