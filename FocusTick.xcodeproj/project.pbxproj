@@ -13,6 +13,7 @@
 		AA000000000000000000013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000012 /* AppDelegate.swift */; };
 		AA000000000000000000015 /* StopwatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000014 /* StopwatchManager.swift */; };
 		AA000000000000000000017 /* GlobalHotkeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000016 /* GlobalHotkeyManager.swift */; };
+		AA000000000000000000024 /* IdleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000025 /* IdleManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AA000000000000000000016 /* GlobalHotkeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHotkeyManager.swift; sourceTree = "<group>"; };
 		AA000000000000000000018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA000000000000000000019 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		AA000000000000000000025 /* IdleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdleManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 				AA000000000000000000012 /* AppDelegate.swift */,
 				AA000000000000000000014 /* StopwatchManager.swift */,
 				AA000000000000000000016 /* GlobalHotkeyManager.swift */,
+				AA000000000000000000025 /* IdleManager.swift */,
 				AA000000000000000000018 /* Info.plist */,
 				AA000000000000000000019 /* AppIcon.icns */,
 			);
@@ -141,6 +144,7 @@
 				AA000000000000000000013 /* AppDelegate.swift in Sources */,
 				AA000000000000000000015 /* StopwatchManager.swift in Sources */,
 				AA000000000000000000017 /* GlobalHotkeyManager.swift in Sources */,
+				AA000000000000000000024 /* IdleManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
