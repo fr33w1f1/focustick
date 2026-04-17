@@ -27,6 +27,17 @@ keytick/
     └── Info.plist             ← LSUIElement=YES, no storyboard
 ```
 
+## Quick Start (No Xcode GUI)
+
+If you have Xcode installed but don't want to open the IDE, you can build and run the app directly from your terminal:
+
+```bash
+chmod +x run.sh
+./run.sh
+```
+
+This will compile the project, create a `build/` directory, and launch the app in your menu bar.
+
 ---
 
 ## Run in Xcode
@@ -46,12 +57,17 @@ keytick/
 
 ---
 
-## First-Launch Permission
+## Features
 
+### Idle Timeout
+FocusTick can automatically stop the clock if it detects no keyboard or mouse activity for a set period. You can configure this via the menu:
+- **Off**: The clock will only stop when you manually toggle it.
+- **1, 2, 5, 10, 15, or 30 minutes**: The clock stops automatically after the selected duration of inactivity.
+- Settings are persisted across launches.
+
+### Global Hotkey
 The global hotkey uses `CGEventTap`, which requires **Accessibility** permission.
-
 On first launch (or if the hotkey doesn't respond):
-
 > **System Settings → Privacy & Security → Accessibility → add FocusTick**
 
 The app shows an alert with a direct deep-link if permission is missing.  
@@ -67,6 +83,7 @@ The menu still works without the permission — only the hotkey requires it.
 | Click menu bar → **Start** | Start |
 | Click menu bar → **Stop** | Stop |
 | Click menu bar → **Reset** | Reset to `00:00` |
+| Click menu bar → **Idle Timeout** | Set inactivity threshold |
 | Click menu bar → **Quit** | Quit |
 
 ### Display format
