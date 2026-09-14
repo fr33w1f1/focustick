@@ -35,7 +35,8 @@ final class IdleManager {
 
     private func checkIdleTime() {
         guard threshold > 0 else { return }
-        let idleSeconds = CGEventSource.secondsSinceLastEventType(.combinedSessionState, .null)
+        let anyInputEvent = CGEventType(rawValue: ~0)!
+        let idleSeconds = CGEventSource.secondsSinceLastEventType(.combinedSessionState, eventType: anyInputEvent)
         if idleSeconds >= threshold {
             print("IdleManager: Idle timeout reached (\(idleSeconds)s >= \(threshold)s).")
             DispatchQueue.main.async { [weak self] in

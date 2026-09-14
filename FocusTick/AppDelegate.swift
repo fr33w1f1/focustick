@@ -28,9 +28,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             self?.updateDisplay(timeString: timeString, isRunning: isRunning)
         }
 
-        let savedThreshold = UserDefaults.standard.double(forKey: idleThresholdKey)
-        // Default to 5 mins if not set or 0 (if 0 was intended as disabled, we handle that in setupMenu)
-        let threshold = savedThreshold == 0 ? 300.0 : savedThreshold
+        // Default to 5 mins only when the user has never chosen a value ("Off" stores 0)
+        let threshold = UserDefaults.standard.object(forKey: idleThresholdKey) as? Double ?? 300.0
         
         idleManager = IdleManager(threshold: threshold) { [weak self] in
             self?.stopwatch.stop()
