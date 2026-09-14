@@ -82,12 +82,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         let options: [(String, TimeInterval)] = [
             ("Off", 0),
+            ("15 seconds", 15),
+            ("30 seconds", 30),
             ("1 minute", 60),
             ("2 minutes", 120),
-            ("5 minutes", 300),
-            ("10 minutes", 600),
-            ("15 minutes", 900),
-            ("30 minutes", 1800)
+            ("5 minutes", 300)
         ]
 
         for (title, value) in options {
